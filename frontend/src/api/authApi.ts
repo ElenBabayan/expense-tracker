@@ -1,11 +1,6 @@
 import axios, { AxiosError } from 'axios'
 import { API_BASE_URL } from '../config/api'
 
-const api = axios.create({
-  baseURL: API_BASE_URL,
-  withCredentials: true,
-})
-
 export interface ApiResponse<T> {
   success: boolean
   message: string
@@ -40,6 +35,7 @@ export interface User {
   lastName: string
   roles: string[]
   createdAt: string
+  updatedAt?: string
   lastLoginAt: string | null
 }
 

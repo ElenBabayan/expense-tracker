@@ -1,12 +1,13 @@
 {
-  "builds": [
-    {
-      "src": "pom.xml",
-      "use": "@railway/maven"
-    }
-  ],
-  "env": {
-    "SPRING_PROFILES_ACTIVE": "prod"
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "startCommand": "java -jar target/expense-tracker-1.0.0-SNAPSHOT.jar",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
   }
 }
 
