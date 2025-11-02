@@ -1,0 +1,11 @@
+nixpacks.version = "1.16.0"
+
+[phases.setup]
+nixPkgs = ["...", "maven"]
+
+[phases.build]
+cmds = ["mvn clean package -DskipTests"]
+
+[start]
+cmd = "java -Xmx512m -jar target/expense-tracker-1.0.0-SNAPSHOT.jar"
+

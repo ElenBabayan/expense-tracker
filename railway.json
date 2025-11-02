@@ -1,0 +1,12 @@
+{
+  "builds": [
+    {
+      "src": "pom.xml",
+      "use": "@railway/maven"
+    }
+  ],
+  "env": {
+    "SPRING_PROFILES_ACTIVE": "prod"
+  }
+}
+
