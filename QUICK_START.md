@@ -214,9 +214,9 @@ sudo systemctl stop postgresql redis    # Linux
 ## Next Steps
 
 - Read [README.md](./README.md) for full documentation
-- Check [SYSTEM_ARCHITECTURE.md](./SYSTEM_ARCHITECTURE.md) for architecture details
-- Review [TECH_STACK.md](./TECH_STACK.md) for technology choices
-- See [DATABASE_SETUP.md](./DATABASE_SETUP.md) for advanced database configuration
+- Check [SYSTEM_ARCHITECTURE.md](docs/SYSTEM_ARCHITECTURE.md) for architecture details
+- Review [TECH_STACK.md](docs/TECH_STACK.md) for technology choices
+- See [DATABASE_SETUP.md](docs/DATABASE_SETUP.md) for advanced database configuration
 
 ## Support
 
