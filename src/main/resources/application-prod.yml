@@ -1,8 +1,6 @@
 spring:
   datasource:
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/expense_tracker}
-    username: ${DATABASE_USERNAME:postgres}
-    password: ${DATABASE_PASSWORD:postgres}
   
   jpa:
     hibernate:
@@ -11,6 +9,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+    open-in-view: false
   
   data:
     redis:
@@ -25,6 +25,8 @@ spring:
 
 server:
   port: ${PORT:8080}
+  error:
+    include-message: always
 
 cors:
   allowed-origins: ${FRONTEND_URL:http://localhost:3000}
@@ -34,5 +36,7 @@ logging:
     root: WARN
     com.expensetracker: INFO
     org.springframework: WARN
+    org.hibernate: WARN
+
 
 
